@@ -13,13 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\HomeController@index');
+Route::get(
+    '/',
+    'App\Http\Controllers\HomeController@index'
+)->name('home');
 
-Route::get('/courses', 'App\Http\Controllers\CoursesController@index');
+Route::get(
+    '/courses',
+    'App\Http\Controllers\CoursesController@index'
+)->name('courses');
 
 Route::get(
     '/course/{id}',
     'App\Http\Controllers\CoursesController@course_item'
-);
+)->name('course');
 
-Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
+Route::get(
+    '/profile',
+    'App\Http\Controllers\ProfileController@index'
+)->name('profile');
