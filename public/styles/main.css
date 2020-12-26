@@ -1,0 +1,32 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+}
+
+#main {
+    flex: 1 0 auto;
+}
+
+.main-inner {
+    margin-bottom: 40px;
+}
+
+nav {
+    background-color: initial;
+    box-shadow: none;
+}
+
+.page-header, .page-footer {
+    background-color: #00897b;
+}
+
+form.user_auth {
+    margin-top: 30px;
+}
